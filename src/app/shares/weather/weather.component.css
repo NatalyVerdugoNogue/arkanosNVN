@@ -1,0 +1,23 @@
+.card-weather {
+    background-color: #589fa2;
+}
+
+tr.mat-header-row {
+    height: 0px !important;
+}
+
+tr.mat-row {
+    vertical-align: middle !important;
+}
+
+td.mat-cell:last-of-type {
+    padding-left: 16px !important;
+}
+
+.table-weather {
+    background-color: #89d0d3;
+}
+
+.color-gray {
+    color: #000000db;
+}

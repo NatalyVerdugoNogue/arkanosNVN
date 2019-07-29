@@ -19,10 +19,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 // http
 import { HttpClientModule } from '@angular/common/http';
+import { WeatherComponent } from './shares/weather/weather.component';
 
 
 @NgModule({
-  declarations: [AppComponent, DashboardComponent, InitComponent, SidebarComponent, FormComponent],
+  declarations: [AppComponent, DashboardComponent, InitComponent, SidebarComponent, FormComponent, WeatherComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

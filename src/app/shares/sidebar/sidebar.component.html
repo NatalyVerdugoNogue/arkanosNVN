@@ -1,7 +1,7 @@
 <mat-card class="card-sidebar">
     <mat-card-header>
         <div mat-card-avatar class="header-image"></div>
-        <mat-card-title class="color-white text-cont-sidebar">Alexander Pierce</mat-card-title>
+        <mat-card-title class="color-white text-cont-sidebar">Alexandra Pierce</mat-card-title>
         <mat-card-subtitle class="color-white text-icon-sidebar mg-t-8">
             <mat-icon class="icon-online text-icon-sidebar">lens</mat-icon>
             Online
@@ -28,4 +28,16 @@
             Estadísticas
         </mat-list-item>
     </mat-list>
+</mat-expansion-panel>
+
+<mat-expansion-panel class="card-sidebar border-sidebar">
+    <mat-expansion-panel-header>
+        <mat-panel-title class="card-sidebar color-white text-cont-sidebar">
+            <mat-icon aria-hidden="false" class="text-icon-sidebar">filter_drama</mat-icon>
+            <a>Clima</a>
+        </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <app-weather></app-weather>
+
 </mat-expansion-panel>

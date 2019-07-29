@@ -37,3 +37,11 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# ApiKey
+**/src/environments/environment.ts
+
+# Firebase
+.firebaserc
+.firebase
+firebase.json
