@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-expansion-panel:not(.mat-expanded):not([aria-disabled="true"]) .mat-expansion-panel-header:hover {
+    background: #1e282c;
+}
+
+.mat-expansion-indicator::after {
+    color: white;
+}
+
+.mat-card-avatar {
+    height: 56px !important;
+    width: 56px !important;
+}
+
+.mat-toolbar h1 {
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.color-white {
+    color: #ffffff;
+}

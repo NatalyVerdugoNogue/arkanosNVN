@@ -1,0 +1,25 @@
+<div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="space-around center" fxLayoutGap.lt-sm=" 16px ">
+    <div fxFlexFill class="card-title">
+        <span class="title">Dashboard</span>
+        <span class="subtitle">Estadisticas</span>
+    </div>
+
+    <mat-card [ngStyle]="{ 'background-color': card.color }" class="card-form" fxFlex="0 1 calc(25% - 16px)" fxFlex.lt-md="0 1 calc(50% - 16px)" fxFlex.lt-sm="0 1 calc(100% - 16px)" *ngFor="let card of cards">
+        <mat-card-header class="card-header">
+            <mat-card-title class="color-white text-data">{{ card.data }}</mat-card-title>
+        </mat-card-header>
+
+        <mat-card-content class="card-content">
+            <p class="color-white text-title">
+                {{ card.title }}
+            </p>
+        </mat-card-content>
+
+        <mat-card-actions class="card-actions">
+            <button mat-button class="color-white text-title">
+        Más Info
+        <mat-icon class="color-white icon-foot">arrow_forward</mat-icon>
+      </button>
+        </mat-card-actions>
+    </mat-card>
+</div>

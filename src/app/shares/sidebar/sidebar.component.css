@@ -1,0 +1,50 @@
+/* ALL */
+
+.card-sidebar {
+    background-color: #1e282c;
+}
+
+.color-white {
+    color: #ffffff;
+}
+
+.text-cont-sidebar {
+    font-size: 16px;
+}
+
+.text-icon-sidebar {
+    font-size: 14px;
+    vertical-align: top;
+}
+
+
+/* USER */
+
+.header-image {
+    background-image: url("./../../img/girl.png");
+    background-size: cover;
+}
+
+.mg-t-8 {
+    margin-top: 8px !important;
+}
+
+.icon-online {
+    color: green;
+}
+
+
+/* MAIN NAVIGATION */
+
+.main-sidebar {
+    background-color: #1a2226;
+    color: #3d3f41;
+}
+
+
+/* MENU */
+
+.border-sidebar:focus:hover:active {
+    border-left: 4px solid #3c8dbc;
+    border-radius: 0;
+}

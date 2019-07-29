@@ -1,0 +1,18 @@
+<div class="container" [class.is-mobile]="mobileQuery.matches">
+    <mat-toolbar class="e-ventas-toolbar">
+        <button mat-icon-button *ngIf="mobileQuery.matches" (click)="snav.toggle()">
+      <mat-icon class="color-white e-ventas-icon-style">menu</mat-icon>
+    </button>
+        <h1 class="color-white e-ventas-style">e-Ventas</h1>
+    </mat-toolbar>
+
+    <mat-sidenav-container class="sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+        <mat-sidenav #snav [opened]="!mobileQuery.matches" [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches" fixedTopGap="56" class="sidebar-style">
+            <app-sidebar></app-sidebar>
+        </mat-sidenav>
+
+        <mat-sidenav-content class="back-content">
+            <router-outlet></router-outlet>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>

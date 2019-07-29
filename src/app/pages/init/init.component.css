@@ -1,0 +1,58 @@
+/* CONTAINER */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.is-mobile .sidenav-container {
+    flex: 1 0 auto;
+    margin-top: 0 !important;
+}
+
+.is-mobile .toolbar {
+    position: fixed;
+    z-index: 2;
+}
+
+
+/* TOOLBAR */
+
+.e-ventas-toolbar {
+    background-color: #3c8dbc;
+}
+
+.e-ventas-style {
+    font-size: 1.5em;
+    padding-left: 3.5rem;
+}
+
+.e-ventas-icon-style {
+    font-size: 1.5em;
+}
+
+
+/* CONTAINER SIDEBAR */
+
+.sidenav-container {
+    flex: 1;
+}
+
+
+/* SIDEBAR */
+
+.sidebar-style {
+    background-color: #222d32;
+}
+
+
+/* CONTENT */
+
+.back-content {
+    background-color: #ebf3f3
+}

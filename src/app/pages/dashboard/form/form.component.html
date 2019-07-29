@@ -1,0 +1,76 @@
+<div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="space-around center">
+    <div fxFlexFill class="card-title">
+        <span class="title">Dashboard</span>
+        <span class="subtitle">Formulario</span>
+    </div>
+
+    <mat-card class="form-style" fxFlex="0 1 calc(50% - 32px)" fxFlex.lt-md="0 1 calc(75% - 32px)" fxFlex.lt-sm="100%">
+        <mat-card-title class="form-title">Datos en Dashboard</mat-card-title>
+        <form [formGroup]="dataForm" (ngSubmit)="onSubmit()">
+            <div class="form-group" class="container">
+                <mat-form-field appearance="outline">
+                    <mat-label>Cantidad de Nuevas Compras</mat-label>
+                    <input matInput placeholder="Nuevas Compras" formControlName="newBuy" required />
+                    <mat-error *ngIf="
+              !dataForm.controls['newBuy'].valid &&
+              dataForm.controls['newBuy'].touched
+            ">
+                        {{ getError("newBuy") }}
+                    </mat-error>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Incremento de Compras</mat-label>
+                    <input matInput placeholder="% Incremento de Compras" formControlName="increBuy" required />
+                    <mat-error *ngIf="
+              !dataForm.controls['increBuy'].valid &&
+              dataForm.controls['increBuy'].touched
+            ">
+                        {{ getError("increBuy") }}
+                    </mat-error>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Cantidad Nuevos Usuarios</mat-label>
+                    <input matInput placeholder="Nuevos Usuarios" formControlName="newUser" required />
+                    <mat-error *ngIf="
+              !dataForm.controls['newUser'].valid &&
+              dataForm.controls['newUser'].touched
+            ">
+                        {{ getError("newUser") }}
+                    </mat-error>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Cantidad Nuevas Visitas</mat-label>
+                    <input matInput placeholder="Nuevas Visitas" formControlName="newVisit" required />
+                    <mat-error *ngIf="
+              !dataForm.controls['newVisit'].valid &&
+              dataForm.controls['newVisit'].touched
+            ">
+                        {{ getError("newVisit") }}
+                    </mat-error>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Fecha de Ingreso</mat-label>
+                    <input matInput [min]="minDate" [matDatepicker]="picker" placeholder="Fecha" formControlName="date" required />
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                    <mat-error *ngIf="
+              !dataForm.controls['newVisit'].valid &&
+              dataForm.controls['newVisit'].touched
+            ">
+                        {{ getErrorDate() }}
+                    </mat-error>
+                </mat-form-field>
+
+                <div class="form-element" align="end">
+                    <button mat-raised-button color="primary" type="submit" [disabled]="!dataForm.valid">
+            Ingresar Datos
+          </button>
+                </div>
+            </div>
+        </form>
+    </mat-card>
+</div>
