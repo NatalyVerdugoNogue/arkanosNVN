@@ -39,8 +39,8 @@ testem.log
 Thumbs.db
 
 # ApiKey
-/src/environments/environment.prod.ts
-/src/environments/environment.ts
+./src/environments/environment.prod.ts
+./src/environments/environment.ts
 
 # Firebase
 .firebaserc

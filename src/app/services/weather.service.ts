@@ -12,7 +12,7 @@ export class WeatherService {
 
   // Data del clima en stgo
   getWeather(): Observable<any> {
-    const urlWeather = `http://api.openweathermap.org/data/2.5/weather?id=3871336&appid=${environment.apiKey}`;
+    const urlWeather = `https://api.openweathermap.org/data/2.5/weather?id=3871336&appid=${environment.apiKey}`;
     return this.http.get(urlWeather);
   }
 }
